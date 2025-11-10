@@ -1,0 +1,27 @@
+.big-post {
+  margin: 0;
+  margin-bottom: -100px;
+}
+
+.big-post .banner {
+  border-radius: var(--radius);
+}
+
+.big-post .posts {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  position: relative;
+  bottom: 150px;
+  left: 0;
+  margin: 0 10%;
+}
+
+.big-post article img {
+  height: 200px;
+}
+
+.big-post article .info {
+  padding: 20px;
+  background-color: var(--clear-bg);
+}

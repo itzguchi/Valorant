@@ -1,0 +1,12 @@
+@import url('base.css');
+@import url('header.css');
+@import url('page.css');
+@import url('footer.css');
+
+@import url('articles/card.css');
+@import url('articles/posts-list.css');
+@import url('articles/horizontal-card.css');
+
+@import url('sections/big-post.css');
+@import url('sections/hot-topics.css');
+@import url('sections/latest-news.css');

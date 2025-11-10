@@ -1,0 +1,21 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: var(--radius);
+  width: 100%;
+}
+
+.card img, .card video {
+  object-fit: cover;
+  width: 100%;
+  min-height: 200px;
+}
+
+.card .info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--clear-bg);
+}

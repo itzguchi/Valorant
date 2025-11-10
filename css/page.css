@@ -1,0 +1,61 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  padding: 20px 50px;
+}
+
+.centered {
+  margin: 0 10%;
+}
+
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+article:hover {
+  outline: var(--main) 2px solid;
+}
+
+.shutter-list hgroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shutter-list .posts {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.columns {
+  display: flex;
+  gap: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.columns> :first-child {
+  flex: 2;
+}
+
+aside {
+  flex: 1;
+}
+
+video::-webkit-media-controls-volume-slider {
+  display: none;
+}
+
+video::-webkit-media-controls-mute-button {
+  display: none;
+}

@@ -1,0 +1,38 @@
+
+
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  border-radius: var(--radius);
+  overflow: auto;
+  height: 400px;
+}
+
+.posts-list article {
+  padding: 15px 20px;
+  background-color: var(--clear-bg);
+
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
+}
+
+.posts-list article:hover {
+  outline: none;
+}
+
+.posts-list article:not(.posts-list li:last-child article) {
+  border-bottom: rgba(255, 255, 255, .5) 1px solid;
+}
+
+.posts-list article h4 img {
+  width: 25px;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.posts-list article time {
+  opacity: .5;
+}

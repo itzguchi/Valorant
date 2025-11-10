@@ -1,0 +1,57 @@
+:root {
+  /* Colors */
+  --dark: #1C1C1C;
+  --main: #e04747;
+  --bg: #23252C;
+  --clear-bg: #373A42;
+
+  /* Variables */
+  --radius: 25px;
+
+  font-size: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: var(--bg);
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 25px;
+  background-color: var(--main);
+  border: none;
+  border-radius: var(--radius);
+  color: inherit;
+  white-space: nowrap;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 3rem;
+  color: var(--main);
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h1, h2, h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}

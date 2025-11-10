@@ -1,0 +1,17 @@
+.horizontal-card {
+  display: flex;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.horizontal-card img {
+  width: 250px;
+  object-fit: cover;
+}
+.horizontal-card .info {
+  background-color: var(--clear-bg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

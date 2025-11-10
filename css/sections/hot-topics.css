@@ -1,0 +1,36 @@
+
+.hot-topics {
+  background-color: var(--clear-bg);
+  padding: 30px;
+  border-radius: var(--radius);
+  gap: 20px;
+}
+
+.hot-topics .topics {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.hot-topics .topics .topic {
+  background-image: url('../../img/hot-topic-thumbnail.webp');
+  padding: 40px 50px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  transition: transform .4s;
+}
+
+.topic:hover {
+  transform: translateY(-10px);
+}
+
+.topic p {
+  padding: 10px 20px;
+  background-color: var(--main);
+  border-radius: var(--radius);
+}
+
+.topic p::before {
+  content: '#';
+}

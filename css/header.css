@@ -1,0 +1,112 @@
+
+header {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  text-transform: uppercase;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+header a {
+  transition: color .4s;
+}
+
+header a:hover {
+  color: var(--main);
+}
+
+header nav {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--dark);
+  width: 100%;
+}
+
+.left-part, .right-part {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex: 2;
+}
+
+.right-part {
+  justify-content: end;
+}
+
+.mini-logo {
+  filter: invert(100%);
+}
+
+header nav .logo {
+  width: 300px;
+}
+
+header h1 {
+  flex: 1;
+}
+
+header search {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 5px;
+}
+
+search:hover input {
+  width: 100%;
+}
+
+search input {
+  background-color: transparent;
+  border: none;
+  border-bottom: white 1px solid;
+  color: inherit;
+  width: 0;
+  box-sizing: border-box;
+  padding-block: 0;
+  padding-inline: 0;
+  transition: width .5s;
+}
+
+input:focus {
+  outline: none;
+  width: 100%;
+}
+
+header menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.submenu {
+  justify-content: center;
+  background-color: var(--bg);
+}
+
+.submenu a {
+  padding: 15px;
+  position: relative;
+  transition: color .4s;
+}
+
+.submenu a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--main);
+  transition: width .4s;
+} 
+
+.submenu a:hover::after {
+  width: 100%;
+}
